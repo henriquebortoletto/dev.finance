@@ -22,21 +22,21 @@
             <h3>Entradas</h3>
             <img src="./img/income.svg" alt="Imagem de entradas" />
           </div>
-          <p>R$ 5.000,00</p>
+          <p id="income-display">R$ 0,00</p>
         </div>
         <div class="card">
           <div class="card-group">
             <h3>Saídas</h3>
             <img src="./img/expense.svg" alt="Imagem de saídas" />
           </div>
-          <p>R$ 2.000,00</p>
+          <p id="expense-display">R$ 0,00</p>
         </div>
         <div class="card total">
           <div class="card-group">
             <h3>Total</h3>
             <img src="./img/total.svg" alt="Imagem de total" />
           </div>
-          <p>R$ 3.000,00</p>
+          <p id="total-display">R$ 0,00</p>
         </div>
       </section>
 
@@ -52,32 +52,7 @@
               <th>Ação</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="description">Luz</td>
-              <td class="expense">- R$ 500,00</td>
-              <td class="date">23/02/2021</td>
-              <td>
-                <img src="./img/minus.svg" alt="Remover transação" />
-              </td>
-            </tr>
-            <tr>
-              <td class="description">Criação website</td>
-              <td class="income">R$ 5000,00</td>
-              <td class="date">23/02/2021</td>
-              <td>
-                <img src="./img/minus.svg" alt="Remover transação" />
-              </td>
-            </tr>
-            <tr>
-              <td class="description">Internet</td>
-              <td class="expense">- R$ 200,00</td>
-              <td class="date">23/02/2021</td>
-              <td>
-                <img src="./img/minus.svg" alt="Remover transação" />
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </section>
     </main>
@@ -86,14 +61,14 @@
       <div class="modal">
         <div id="form">
           <h2>Nova Transação</h2>
-          <form>
+          <form id="form-submit">
             <div class="input-group">
               <label for="description" class="sr-only">Descrição</label>
               <input type="text" id="description" name="description" placeholder="Descrição" />
             </div>
             <div class="input-group">
               <label for="amount" class="sr-only">Valor</label>
-              <input type="number" min="0.01" step="0.01" id="amount" name="amount" placeholder="0,00" />
+              <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00" />
               <small>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
             </div>
             <div class="input-group">
@@ -113,6 +88,6 @@
       <p>2021 - dev.finance$</p>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

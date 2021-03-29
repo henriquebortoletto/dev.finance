@@ -186,6 +186,10 @@ header {
   padding: 1rem 2rem;
 }
 
+#data-table .remove-transaction {
+  cursor: pointer;
+}
+
 td.description {
   color: var(--color-dark-blue);
 }
@@ -234,7 +238,10 @@ td.expense {
 }
 
 .input-group small {
+  font-size: 0.75rem;
+  display: inline-block;
   opacity: 0.4;
+  margin-top: 0.5rem;
 }
 
 .input-group.actions {
