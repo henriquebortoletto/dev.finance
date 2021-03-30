@@ -17,9 +17,9 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-  [x] HTML
-  [x] CSS
-  [x] JavaScript
+ - [x] HTML
+ - [x] CSS
+ - [x] JavaScript
 
 ## 💻 Projeto
 
