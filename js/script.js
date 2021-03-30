@@ -32,7 +32,8 @@ const Utils = {
     return signal + value
   },
   formatAmount(value) {
-    return Number(value.replace(/\,\./g, '')) * 100
+    value = Number(value) * 100
+    return Math.round(value)
   },
   formatDate(date) {
     const splittedDate = date.split('-')
@@ -171,8 +172,6 @@ const Form = {
 
 const App = {
   init() {
-    Modal.init()
-    Form.submit()
     Transaction.all.forEach(Dom.addTransaction)
     Dom.updateTransaction()
     Storage.set(Transaction.all)
@@ -184,3 +183,5 @@ const App = {
 }
 
 App.init()
+Modal.init()
+Form.submit()
